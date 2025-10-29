@@ -1,0 +1,5 @@
+{
+  "name": "Desaio 01 - Imagem IA",
+  "description": "Uma aplicação web que utiliza a API do Gemini para analisar imagens enviadas pelo usuário, fornecendo uma descrição detalhada dos objetos, cenários e percepções sobre o conteúdo visual.",
+  "requestFramePermissions": []
+}
