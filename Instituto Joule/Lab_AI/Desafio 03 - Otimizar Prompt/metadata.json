@@ -1,0 +1,5 @@
+{
+  "name": "Desafio03OtimizadorDePrompt",
+  "description": "Um sistema interativo onde o estudante aprende a otimizar um prompt para IA, começando com um comando genérico e ineficaz e refinando-o passo a passo com técnicas como contexto, persona e formato, para obter respostas de alta qualidade.",
+  "requestFramePermissions": []
+}
