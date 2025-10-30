@@ -1,9 +1,16 @@
-
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { analyzeImage } from './services/geminiService';
 import Header from './components/Header';
 import Spinner from './components/Spinner';
-import { ImageIcon, UploadIcon, SparklesIcon, XCircleIcon, GithubIcon, LinkedinIcon } from './components/Icons';
+import { 
+  ImageIcon, 
+  UploadIcon, 
+  SparklesIcon, 
+  XCircleIcon, 
+  GithubIcon, 
+  LinkedinIcon, 
+  ArrowUpIcon // 👈 adicionado aqui
+} from './components/Icons';
 
 const App: React.FC = () => {
   const [imageFile, setImageFile] = useState<File | null>(null);
@@ -11,6 +18,24 @@ const App: React.FC = () => {
   const [analysis, setAnalysis] = useState<string>('');
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string>('');
+
+  // 👇 Estado para o botão "Voltar ao Topo"
+  const [showScrollToTop, setShowScrollToTop] = useState<boolean>(false);
+
+  // 👇 Efeito para monitorar rolagem
+  useEffect(() => {
+    const checkScrollTop = () => {
+      if (window.scrollY > 300) setShowScrollToTop(true);
+      else setShowScrollToTop(false);
+    };
+    window.addEventListener('scroll', checkScrollTop);
+    return () => window.removeEventListener('scroll', checkScrollTop);
+  }, []);
+
+  // 👇 Função para rolar ao topo
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   const handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -32,7 +57,6 @@ const App: React.FC = () => {
     setImagePreview(null);
     setAnalysis('');
     setError('');
-    // Reset file input
     const fileInput = document.getElementById('file-upload') as HTMLInputElement;
     if(fileInput) fileInput.value = '';
   }, []);
@@ -152,6 +176,7 @@ const App: React.FC = () => {
           </div>
         </div>
       </main>
+
       <footer className="text-center p-4 text-slate-500 text-sm">
         <div className="flex justify-center items-center gap-4 mb-2">
             <a href="https://github.com/matewanga" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" className="hover:text-slate-300 transition-colors">
@@ -163,6 +188,17 @@ const App: React.FC = () => {
         </div>
         <p>Desenvolvido com React, Tailwind CSS, e Gemini API.</p>
       </footer>
+
+      {/* 👇 Botão "Voltar ao Topo" */}
+      {showScrollToTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-6 right-6 bg-indigo-600 hover:bg-indigo-700 text-white p-3 rounded-full shadow-lg transition-transform duration-300 hover:scale-110"
+          aria-label="Voltar ao topo"
+        >
+          <ArrowUpIcon className="w-6 h-6" />
+        </button>
+      )}
     </div>
   );
 };
