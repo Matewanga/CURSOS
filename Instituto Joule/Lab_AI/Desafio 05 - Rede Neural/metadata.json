@@ -1,0 +1,5 @@
+{
+  "name": "Treinador de Rede Neural Manual",
+  "description": "Uma aplicação educacional interativa para aprender os fundamentos de redes neurais, permitindo que os usuários ajustem pesos e biases manualmente para treinar um modelo em uma tarefa de classificação simples.",
+  "requestFramePermissions": []
+}
