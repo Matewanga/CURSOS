@@ -9,7 +9,7 @@ import {
   XCircleIcon, 
   GithubIcon, 
   LinkedinIcon, 
-  ArrowUpIcon // 👈 adicionado aqui
+  ArrowUpIcon
 } from './components/Icons';
 
 const App: React.FC = () => {
@@ -19,10 +19,10 @@ const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string>('');
 
-  // 👇 Estado do botão "Voltar ao Topo"
+  // Estado do botão "Voltar ao Topo"
   const [showScrollToTop, setShowScrollToTop] = useState<boolean>(false);
 
-  // 👇 Efeito para mostrar/esconder o botão conforme rolagem
+  // Efeito para mostrar/esconder o botão conforme rolagem
   useEffect(() => {
     const checkScrollTop = () => {
       setShowScrollToTop(window.scrollY > 300);
@@ -31,9 +31,17 @@ const App: React.FC = () => {
     return () => window.removeEventListener('scroll', checkScrollTop);
   }, []);
 
+  // Scroll suave para o topo
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  // Scroll automático para o topo quando análise terminar
+  useEffect(() => {
+    if (analysis) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [analysis]);
 
   const handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -63,7 +71,6 @@ const App: React.FC = () => {
       setError('Por favor, selecione uma imagem primeiro.');
       return;
     }
-
     setIsLoading(true);
     setError('');
     setAnalysis('');
@@ -83,12 +90,13 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-900 text-slate-200 flex flex-col font-sans">
       <Header />
+
       <main className="flex-grow container mx-auto p-4 md:p-8 flex flex-col items-center">
         <div className="w-full max-w-4xl bg-slate-800/50 rounded-2xl shadow-2xl border border-slate-700 backdrop-blur-sm p-6 md:p-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             
             {/* Upload e Preview da Imagem */}
-            <div className="flex flex-col items-center justify-start space-y-4"> {/* 👈 alterado justify-center → justify-start */}
+            <div className="flex flex-col items-center justify-start space-y-4"> {/* ⬅ justify-start para subir a imagem */}
               <label
                 htmlFor="file-upload"
                 className={`relative w-full h-64 md:h-full min-h-[256px] border-2 border-dashed rounded-lg flex flex-col justify-start items-center cursor-pointer transition-all duration-300 ${
@@ -182,6 +190,7 @@ const App: React.FC = () => {
                 </div>
               )}
             </div>
+
           </div>
         </div>
       </main>
@@ -198,7 +207,7 @@ const App: React.FC = () => {
         <p>Desenvolvido com React, Tailwind CSS e Gemini API.</p>
       </footer>
 
-      {/* 👇 Botão "Voltar ao Topo" */}
+      {/* Botão "Voltar ao Topo" */}
       {showScrollToTop && (
         <button
           onClick={scrollToTop}
