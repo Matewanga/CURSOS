@@ -1,0 +1,5 @@
+{
+  "name": "FAQ",
+  "description": "Uma ferramenta para criar e simular um chatbot de perguntas frequentes. Adicione seus pares de pergunta e resposta e, em seguida, teste a lógica de conversação do bot em um ambiente de simulação.",
+  "requestFramePermissions": []
+}
