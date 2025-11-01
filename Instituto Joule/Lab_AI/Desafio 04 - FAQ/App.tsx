@@ -2,6 +2,7 @@ import React, { useState, useCallback } from 'react';
 import { AppMode, ChatMessage, FAQ } from './types';
 import FaqBuilder from './components/FaqBuilder';
 import ChatSimulator from './components/ChatSimulator';
+import logo from './img/logo.png'; // ajuste o caminho relativo ao seu arquivo
 import getBotResponse from './services/geminiService';
 
 const App: React.FC = () => {
@@ -55,8 +56,11 @@ const App: React.FC = () => {
       <nav className="fixed top-0 left-0 w-full bg-black/80 backdrop-blur-md border-b border-gray-800 z-50">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <img src="./img/logo.png" alt="Logo" className="w-10 h-10 rounded-full" />
-            <h1 className="text-2xl font-bold text-indigo-400">Construtor FAQ Bot</h1>
+<img
+  src={logo}
+  alt="Logo"
+  className="w-10 h-10 rounded-full"
+/>            <h1 className="text-2xl font-bold text-indigo-400">Construtor FAQ Bot</h1>
           </div>
           <div className="hidden md:flex gap-6 text-gray-300">
             <button onClick={() => setShowHero(true)} className="hover:text-indigo-400 transition">Início</button>
