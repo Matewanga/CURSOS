@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { TUTORIAL_STEPS, BrainCircuitIcon, FileTextIcon, SparklesIcon, TrophyIcon, ArrowUpIcon } from './constants';
 import { generateContent } from './services/geminiService';
+import logo from './img/logo.png'; // ajuste o caminho relativo ao seu arquivo
 import { TutorialStep } from './types';
 
 const Panel = ({
@@ -87,8 +88,11 @@ const App: React.FC = () => {
       <nav className="fixed top-0 left-0 w-full bg-black/80 backdrop-blur-md border-b border-gray-800 z-50">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center flex-wrap">
           <div className="flex items-center gap-3">
-            <img src="./img/logo.png" alt="Logo" className="w-9 h-9 rounded-full" />
-            <h1 className="text-2xl font-bold text-indigo-400">Otimizador de Prompt</h1>
+<img
+  src={logo}
+  alt="Logo"
+  className="w-10 h-10 rounded-full"
+/>            <h1 className="text-2xl font-bold text-indigo-400">Otimizador de Prompt</h1>
           </div>
           <div className="hidden md:flex gap-6 text-gray-300">
             <button onClick={() => setShowHero(true)} className="hover:text-indigo-400 transition cursor-pointer">Início</button>
