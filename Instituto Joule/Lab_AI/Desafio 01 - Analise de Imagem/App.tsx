@@ -86,7 +86,7 @@ const App: React.FC = () => {
           {/* LOGO + NOME */}
           <div className="flex items-center space-x-3">
             <img
-              src="./img/logo.png" // 🖼️ coloque sua imagem de logo na pasta public e nomeie como "logo.png"
+              src="/img/logo.png" // 🖼️ coloque sua imagem de logo na pasta public e nomeie como "logo.png"
               alt="Logo"
               className="w-10 h-10 rounded-full"
             />
