@@ -20,7 +20,7 @@ Aqui estão os cursos incluídos neste repositório, com seus principais conteú
 /CURSOS
 ├── Instituto Joule
 │ └── Lab_AI
-└── OutroCurso
+└── ...
 ```
 
 > Cada pasta contém o material relacionado ao curso correspondente.
