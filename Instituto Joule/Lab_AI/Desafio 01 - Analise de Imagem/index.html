@@ -1,26 +1,34 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF--ax" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./img/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Analisador de Imagens com IA</title>
+
+    <!-- Importando Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
-  <body class="bg-slate-900">
+
+    <!-- Importmap para React e Gemini -->
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0"
+      }
+    }
+    </script>
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body class="bg-black text-gray-200">
+    <!-- O React vai montar o app dentro dessa div -->
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+
+    <!-- Arquivo principal React -->
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
