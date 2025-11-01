@@ -1,6 +1,8 @@
 import React, { useState, useCallback, useEffect } from "react";
 import { analyzeImage } from "./services/geminiService";
 import Spinner from "./components/Spinner";
+import logo from './img/logo.png'; // ajuste o caminho relativo ao seu arquivo
+
 import {
   ImageIcon,
   UploadIcon,
@@ -85,11 +87,12 @@ const App: React.FC = () => {
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           {/* LOGO + NOME */}
           <div className="flex items-center space-x-3">
-            <img
-              src="/img/logo.png" // 🖼️ coloque sua imagem de logo na pasta public e nomeie como "logo.png"
-              alt="Logo"
-              className="w-10 h-10 rounded-full"
-            />
+          
+<img
+  src={logo}
+  alt="Logo"
+  className="w-10 h-10 rounded-full"
+/>
             <h1 className="text-2xl font-bold text-indigo-400 tracking-wide">
               IA Analisadora
             </h1>
