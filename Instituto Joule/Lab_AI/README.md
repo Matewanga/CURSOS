@@ -1,8 +1,3 @@
-
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
-
 # 🎓 Lab AI - Instituto Joule
 
 Bem-vindo ao repositório do **Lab AI** do **Instituto Joule**!  
@@ -51,11 +46,11 @@ npm run dev
 
 ```
 Lab_AI/
-├── components/       # Componentes React (Header, NetworkDiagram, etc.)
-├── types/            # Tipagens TypeScript
-├── public/           # Imagens e assets
-├── App.tsx           # Componente principal
-└── package.json      # Dependências e scripts
+├── Desafio 01      
+├── Desafio 02          
+├── Desafio 03           
+├── Desafio 04           
+└── Desafio 05
 ```
 
 > Cada pasta contém arquivos essenciais para o funcionamento do app e exemplos de treino interativo.
@@ -84,13 +79,11 @@ A reprodução ou modificação do conteúdo deve respeitar os autores e o Insti
 
 ## 🙏 Agradecimentos
 
-Agradecemos ao **Instituto Joule**, aos professores e colegas pelo suporte e conteúdo que tornam este material possível.
+Agradeço ao **Instituto Joule**, aos professores e colegas pelo suporte e conteúdo que tornam este material possível.
 
 ---
 
 > *“Aprender fazendo é a melhor maneira de dominar a Inteligência Artificial.”*
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=4A90E2&height=120&section=footer"/>
-```
 
----
+
