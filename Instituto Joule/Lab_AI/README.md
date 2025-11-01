@@ -46,11 +46,11 @@ npm run dev
 
 ```
 Lab_AI/
-├── Desafio 01      
-├── Desafio 02          
-├── Desafio 03           
-├── Desafio 04           
-└── Desafio 05
+├── Desafio 01 - Análise de Imagem
+├── Desafio 02 - Pitch e Logo        
+├── Desafio 03 - Otimizar Prompt       
+├── Desafio 04 - FAQ        
+└── Desafio 05 - Rede Neural
 ```
 
 > Cada pasta contém arquivos essenciais para o funcionamento do app e exemplos de treino interativo.
