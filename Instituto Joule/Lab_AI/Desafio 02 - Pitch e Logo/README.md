@@ -1,4 +1,4 @@
-# 🎤 Desafio 02 — Pitch e Logo
+# 🧠 Desafio 02 — Pitch e Logo
 
 ![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=a78bfa\&size=35\&center=true\&vCenter=true\&width=1000\&lines=Criação+de+Pitch+e+Identidade+Visual;Desafio+02+—+Instituto+Joule+%F0%9F%A4%96)
 
