@@ -5,6 +5,7 @@ import { PitchDisplay } from "./components/PitchDisplay";
 import { LogoDisplay } from "./components/LogoDisplay";
 import { LoadingSpinner } from "./components/LoadingSpinner";
 import { ErrorMessage } from "./components/ErrorMessage";
+import logo from './img/logo.png'; // ajuste o caminho relativo ao seu arquivo
 import {
   generatePitchAndLogo,
   editLogoDescription,
@@ -115,7 +116,11 @@ const App: React.FC = () => {
 <nav className="fixed top-0 left-0 w-full bg-gray-900/80 backdrop-blur-md border-b border-gray-800 z-50">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <img src="./img/logo.png" alt="Logo" className="w-9 h-9 rounded-full" />
+          <img
+  src={logo}
+  alt="Logo"
+  className="w-10 h-10 rounded-full"
+/>
             <h1 className="text-2xl font-bold text-indigo-400">Pitch Perfect AI</h1>
           </div>
 
