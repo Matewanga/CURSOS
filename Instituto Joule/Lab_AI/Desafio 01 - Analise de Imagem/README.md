@@ -19,6 +19,7 @@ O foco deste desafio é **explorar o uso prático da IA na interpretação visua
 * **JavaScript (Vite)** — lógica e funcionamento do app
 * **API de Inteligência Artificial (Google Gemini / AI Studio)** — análise e interpretação das imagens
 * **TailwindCSS** — estilização responsiva e moderna
+* **GitHub Pages / Vercel** — hospedagem e exibição do resultado
 
 ---
 
