@@ -5,6 +5,7 @@ import Explanation from "./components/Explanation";
 import NetworkDiagram from "./components/NetworkDiagram";
 import ControlPanel from "./components/ControlPanel";
 import ResultsTable from "./components/ResultsTable";
+import logo from './img/logo.png'; // ajuste o caminho relativo ao seu arquivo
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiArrowUp } from "react-icons/hi";
@@ -86,8 +87,11 @@ const App: React.FC = () => {
       <nav className="fixed w-full top-0 left-0 z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-3">
-            <img src="./img/logo.png" alt="Logo" className="w-10 h-10 rounded-full" />
-            <h1 className="text-2xl font-bold text-indigo-400 tracking-wide">
+<img
+  src={logo}
+  alt="Logo"
+  className="w-10 h-10 rounded-full"
+/>            <h1 className="text-2xl font-bold text-indigo-400 tracking-wide">
               Rede Neural Interativa
             </h1>
           </div>
