@@ -1,20 +1,71 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🧠 Desafio 04 — FAQ Interativo
 
-# Run and deploy your AI Studio app
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=a78bfa\&size=35\&center=true\&vCenter=true\&width=1000\&lines=FAQ+Interativo+com+IA;Desafio+04+—+Instituto+Joule+%F0%9F%A4%96)
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/drive/1Hvw_IgczIGI1sP7Pd6zrsFaITBgdNc9R
+## 📘 Descrição
 
-## Run Locally
+O **Desafio 04** teve como objetivo o desenvolvimento de um **FAQ interativo**, capaz de responder dúvidas frequentes dos usuários de forma dinâmica e inteligente.
+A proposta foi criar uma interface simples, funcional e intuitiva, que utilizasse **inteligência artificial** para fornecer **respostas automáticas e personalizadas**, otimizando o suporte ao usuário.
 
-**Prerequisites:**  Node.js
+Este desafio buscou aplicar **conceitos de usabilidade, automação e IA conversacional**, oferecendo uma experiência eficiente e moderna.
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## ⚙️ Tecnologias Utilizadas
+
+* **React.js** — estrutura da interface
+* **JavaScript (Vite)** — lógica e funcionamento do app
+* **TailwindCSS** — estilização moderna e responsiva
+* **API de Inteligência Artificial (Google Gemini / AI Studio)** — geração de respostas automáticas
+* **GitHub Pages / Vercel** — hospedagem e exibição do resultado
+
+---
+
+## 🚀 Como Executar
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/Matewanga/CURSOS.git
+   ```
+2. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+3. Inicie o projeto:
+
+   ```bash
+   npm run dev
+   ```
+4. Acesse o link exibido no terminal (geralmente `http://localhost:5173`).
+
+---
+
+## 💡 Aprendizados
+
+Durante este desafio, foi possível compreender:
+
+* Como criar uma **interface de perguntas e respostas interativa**;
+* A integração de IA para **respostas dinâmicas**;
+* A importância de um FAQ bem estruturado para a **experiência do usuário**;
+* Como aplicar **design limpo e acessível** em aplicações de suporte automatizado.
+
+---
+
+## 👩‍💻 Autora
+
+**Rebeca Matewanga Maria Kamalandua**
+📍 Desenvolvedora Front-end | Estudante da FATEC
+✨ *Projeto desenvolvido no Instituto Joule – LabAI*
+
+---
+
+> “O conhecimento é poder, e compartilhá-lo é multiplicar esse poder.”
+> — *Desconhecido*
+
+---
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=a78bfa&height=120&section=footer"/>
