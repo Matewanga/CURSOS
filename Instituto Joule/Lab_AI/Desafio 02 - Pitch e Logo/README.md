@@ -1,20 +1,66 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🎤 Desafio 02 — Pitch e Logo
 
-# Run and deploy your AI Studio app
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=a78bfa\&size=35\&center=true\&vCenter=true\&width=1000\&lines=Criação+de+Pitch+e+Identidade+Visual;Desafio+02+—+Instituto+Joule+%F0%9F%A4%96)
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/drive/1FmspiHD8m6aFjhPyt0lglCREsatTxnVn
+## 📘 Descrição
 
-## Run Locally
+O **Desafio 02** teve como objetivo **criar um Pitch e uma identidade visual (logo)** para uma solução inovadora desenvolvida durante o *LabAI – Instituto Joule*.
+A proposta envolveu **comunicar a ideia de forma clara, atrativa e profissional**, utilizando princípios de **storytelling, design e branding** para apresentar o projeto a potenciais parceiros ou investidores.
 
-**Prerequisites:**  Node.js
+O foco deste desafio foi **desenvolver a comunicação visual e verbal de um produto**, explorando tanto a criatividade quanto a capacidade de síntese.
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## ⚙️ Tecnologias e Ferramentas Utilizadas
+
+* **React.js** — estrutura da interface do site de apresentação  
+* **JavaScript (Vite)** — lógica e funcionamento do projeto  
+* **TailwindCSS** — estilização moderna e responsiva  
+* **API de Inteligência Artificial (Google Gemini / AI Studio)** — apoio criativo e análise de ideias  
+* **GitHub Pages / Vercel** — hospedagem e exibição do resultado
+
+---
+
+## 🚀 Estrutura do Projeto
+
+1. **Logo:** criação de uma identidade visual única e coerente com o conceito do projeto.
+
+2. **Pitch:** desenvolvimento de uma apresentação curta e envolvente explicando:
+
+   * O problema identificado;
+   * A solução proposta;
+   * O público-alvo;
+   * Os diferenciais do projeto;
+   * O impacto esperado.
+
+3. **Apresentação final:** integração entre design e narrativa, transmitindo propósito e valor.
+
+---
+
+## 💡 Aprendizados
+
+Durante este desafio, foi possível compreender:
+
+* Como traduzir uma ideia em uma **identidade visual coerente**;
+* A importância de um **pitch objetivo e envolvente**;
+* Técnicas de **comunicação e persuasão** em apresentações;
+* A relevância de alinhar **estética e propósito** em um projeto digital.
+
+---
+
+## 👩‍💻 Autora
+
+**Rebeca Matewanga Maria Kamalandua**
+📍 Desenvolvedora Front-end | Estudante da FATEC
+✨ *Projeto desenvolvido no Instituto Joule – LabAI*
+
+---
+
+> “Design é inteligência tornando-se visível.”
+> — *Alina Wheeler*
+
+---
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=a78bfa&height=120&section=footer"/>
