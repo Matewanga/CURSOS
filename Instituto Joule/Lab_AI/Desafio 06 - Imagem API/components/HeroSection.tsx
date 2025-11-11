@@ -17,11 +17,11 @@ export const HeroSection: React.FC = () => {
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-600">Bem-vindo</span> ao Desafio de Visão de IA
                 </h1>
                 <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-8">
-                    Descubra o poder da inteligência artificial. Carregue uma imagem e veja como a IA pode identificar e descrever objetos com detalhes impressionantes. Uma janela para o futuro da tecnologia visual.
-                </p>
+Este projeto faz parte do <span className="text-indigo-400 font-semibold">Desafio 06</span> do curso <span className="text-indigo-400 font-semibold">Lab_AI</span> do Instituto Joule.  
+            Aqui você pode analisar imagens com o poder da Inteligência Artificial.                </p>
                 <button
                     onClick={handleScrollToChallenge}
-                    className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-transform duration-200 transform hover:scale-105 shadow-lg"
+            className="bg-indigo-400 hover:bg-indigo-500 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg transition-transform hover:scale-105"
                 >
                     Iniciar o Desafio
                 </button>
