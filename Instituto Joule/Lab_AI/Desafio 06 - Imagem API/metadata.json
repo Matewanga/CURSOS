@@ -1,0 +1,5 @@
+{
+  "name": "desafio 06 - Imagem API",
+  "description": "Um desafio interativo para que os alunos entendam como a IA analisa e descreve imagens. Os usuários podem carregar uma imagem, ver os objetos identificados pela IA e, em seguida, comandar a IA para descrever um objeto escolhido.",
+  "requestFramePermissions": []
+}
