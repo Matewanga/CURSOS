@@ -10,7 +10,7 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({ currentView, setView }) => {
   // Caminho para o seu arquivo de imagem local. 
   // Certifique-se de que o arquivo dentro da pasta 'img' se chama 'logo.png'.
-  const logoSrc = "./img/logo.png"; 
+import logo from '../img/logo.png';   // <- IMPORTANDO CORRETAMENTE
 
   return (
     <nav className="sticky top-0 z-50 bg-black/60 backdrop-blur-xl border-b border-white/10 px-6 py-4">
