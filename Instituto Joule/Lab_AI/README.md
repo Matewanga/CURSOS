@@ -52,7 +52,7 @@ Lab_AI/
 ├── Desafio 04 - FAQ        
 ├── Desafio 05 - Rede Neural
 ├── Desafio 06 - Imagem API
-├── Desafio 07 - MultinodalAI
+├── Desafio 07 - MultimodalAI
 └── Desafio 08 - Ethos AI
 ```
 
