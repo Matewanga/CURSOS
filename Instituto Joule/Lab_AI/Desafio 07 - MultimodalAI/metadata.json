@@ -1,0 +1,8 @@
+{
+  "name": "Desafio 07 - Orquestrador Multimodal",
+  "description": "Uma aplicação prática que combina visão e audição usando a Gemini API para analisar imagens e áudios simultaneamente.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
