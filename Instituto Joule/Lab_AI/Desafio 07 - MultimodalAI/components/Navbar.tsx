@@ -1,6 +1,6 @@
-
 import React from 'react';
-import { Home, Cpu, Layers } from 'lucide-react';
+import { Home, Cpu } from 'lucide-react';
+import logo from '../img/logo.png';   // <- IMPORTAR AQUI, NO TOPO
 
 interface NavbarProps {
   currentView: 'welcome' | 'app';
@@ -8,10 +8,6 @@ interface NavbarProps {
 }
 
 export const Navbar: React.FC<NavbarProps> = ({ currentView, setView }) => {
-  // Caminho para o seu arquivo de imagem local. 
-  // Certifique-se de que o arquivo dentro da pasta 'img' se chama 'logo.png'.
-import logo from '../img/logo.png';   // <- IMPORTANDO CORRETAMENTE
-
   return (
     <nav className="sticky top-0 z-50 bg-black/60 backdrop-blur-xl border-b border-white/10 px-6 py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -21,23 +17,14 @@ import logo from '../img/logo.png';   // <- IMPORTANDO CORRETAMENTE
         >
           <div className="relative">
             <div className="absolute inset-0 bg-brand-500/20 blur-lg rounded-full group-hover:bg-brand-500/40 transition-all"></div>
-            <img 
-              src={logoSrc} 
-              alt="Logo" 
+
+            <img
+              src={logo}
+              alt="Logo"
               className="relative w-10 h-10 rounded-full border border-white/10 shadow-2xl object-cover"
-              onError={(e) => {
-                // Se a imagem não for encontrada no caminho local, ele remove a borda e mostra iniciais
-                const target = e.currentTarget;
-                target.style.display = 'none';
-                const parent = target.parentElement;
-                if (parent) {
-                    parent.style.backgroundColor = '#0ea5e9';
-                    parent.className = "relative w-10 h-10 rounded-full border border-white/10 flex items-center justify-center";
-                    parent.innerHTML = '<span class="text-white font-black text-[10px]">AI</span>';
-                }
-              }}
             />
           </div>
+
           <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400">
             Multimodal<span className="text-brand-500">AI</span>
           </span>
@@ -55,6 +42,7 @@ import logo from '../img/logo.png';   // <- IMPORTANDO CORRETAMENTE
             <Home size={18} />
             <span className="hidden md:inline">Início</span>
           </button>
+
           <button 
             onClick={() => setView('app')}
             className={`flex items-center gap-2 px-4 py-2 rounded-xl transition-all ${
