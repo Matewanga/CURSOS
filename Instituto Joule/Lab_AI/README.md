@@ -50,7 +50,10 @@ Lab_AI/
 ├── Desafio 02 - Pitch e Logo        
 ├── Desafio 03 - Otimizar Prompt       
 ├── Desafio 04 - FAQ        
-└── Desafio 05 - Rede Neural
+├── Desafio 05 - Rede Neural
+├── Desafio 06 - Imagem API
+├── Desafio 07 - MultinodalAI
+└── Desafio 08 - Ethos AI
 ```
 
 > Cada pasta contém arquivos essenciais para o funcionamento do app e exemplos de treino interativo.
