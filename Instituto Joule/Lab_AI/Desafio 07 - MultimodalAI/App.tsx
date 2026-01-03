@@ -6,6 +6,7 @@ import { Navbar } from './components/Navbar';
 import { Welcome } from './components/Welcome';
 import { analyzeMultimodalInput } from './services/geminiService';
 import { Sparkles, AlertCircle, Bot, ArrowRight, Github, Linkedin, ArrowUp, RotateCcw, Edit3, Send } from 'lucide-react';
+import logo from './img/logo.png'; // ajuste o caminho relativo ao seu arquivo
 
 export default function App() {
   const [view, setView] = useState<'welcome' | 'app'>('welcome');
